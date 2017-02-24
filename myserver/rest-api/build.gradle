@@ -1,0 +1,9 @@
+apply plugin: 'pegasus' // defines dataModel(), dataTemplateCompile(), restClientCompile()
+
+dependencies {
+    // rest-api:generateDataTemplate
+    dataTemplateCompile 'com.linkedin.pegasus:data:6.0.12'
+    // rest-impl:generateRestModel
+    dataModel 'com.linkedin.pegasus:restli-common:6.0.12'
+}
+
